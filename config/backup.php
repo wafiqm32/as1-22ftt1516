@@ -8,7 +8,11 @@ return [
          * The name of this application. You can use this name to monitor
          * the backups.
          */
+<<<<<<< HEAD
         'name' => env('APP_NAME', 'laravel-backup'),
+=======
+        'name' => 'as2-' . env('APP_NAME', 'laravel-backup'),
+>>>>>>> 7cc5bf7 (done change laravel logo)
 
         'source' => [
 
@@ -140,7 +144,11 @@ return [
             /*
              * The filename prefix used for the backup zip file.
              */
+<<<<<<< HEAD
             'filename_prefix' => 'as1',
+=======
+            'filename_prefix' => '',
+>>>>>>> 7cc5bf7 (done change laravel logo)
 
             /*
              * The disk names on which the backups will be stored.
@@ -159,7 +167,11 @@ return [
          * The password to be used for archive encryption.
          * Set to `null` to disable encryption.
          */
+<<<<<<< HEAD
         'password' => env('BACKUP_ARCHIVE_PASSWORD'),
+=======
+        'password' => '22ftt1516',
+>>>>>>> 7cc5bf7 (done change laravel logo)
 
         /*
          * The encryption algorithm to be used for archive encryption.
@@ -168,7 +180,11 @@ return [
          * When set to 'default', we'll use ZipArchive::EM_AES_256 if it is
          * available on your system.
          */
+<<<<<<< HEAD
         'encryption' => 'default',
+=======
+        'encryption' => true,
+>>>>>>> 7cc5bf7 (done change laravel logo)
 
         /**
          * The number of attempts, in case the backup command encounters an exception

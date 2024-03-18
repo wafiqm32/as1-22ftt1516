@@ -3,7 +3,10 @@
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
+<<<<<<< HEAD
 use App\Providers\RouteServiceProvider;
+=======
+>>>>>>> 7cc5bf7 (done change laravel logo)
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Event;
@@ -43,7 +46,11 @@ class EmailVerificationTest extends TestCase
 
         Event::assertDispatched(Verified::class);
         $this->assertTrue($user->fresh()->hasVerifiedEmail());
+<<<<<<< HEAD
         $response->assertRedirect(RouteServiceProvider::HOME.'?verified=1');
+=======
+        $response->assertRedirect(route('dashboard', absolute: false).'?verified=1');
+>>>>>>> 7cc5bf7 (done change laravel logo)
     }
 
     public function test_email_is_not_verified_with_invalid_hash(): void

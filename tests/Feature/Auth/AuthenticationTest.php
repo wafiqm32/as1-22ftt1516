@@ -3,7 +3,10 @@
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
+<<<<<<< HEAD
 use App\Providers\RouteServiceProvider;
+=======
+>>>>>>> 7cc5bf7 (done change laravel logo)
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -28,7 +31,11 @@ class AuthenticationTest extends TestCase
         ]);
 
         $this->assertAuthenticated();
+<<<<<<< HEAD
         $response->assertRedirect(RouteServiceProvider::HOME);
+=======
+        $response->assertRedirect(route('dashboard', absolute: false));
+>>>>>>> 7cc5bf7 (done change laravel logo)
     }
 
     public function test_users_can_not_authenticate_with_invalid_password(): void

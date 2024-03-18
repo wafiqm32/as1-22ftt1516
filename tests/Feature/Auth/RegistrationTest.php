@@ -2,7 +2,10 @@
 
 namespace Tests\Feature\Auth;
 
+<<<<<<< HEAD
 use App\Providers\RouteServiceProvider;
+=======
+>>>>>>> 7cc5bf7 (done change laravel logo)
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -27,6 +30,10 @@ class RegistrationTest extends TestCase
         ]);
 
         $this->assertAuthenticated();
+<<<<<<< HEAD
         $response->assertRedirect(RouteServiceProvider::HOME);
+=======
+        $response->assertRedirect(route('dashboard', absolute: false));
+>>>>>>> 7cc5bf7 (done change laravel logo)
     }
 }

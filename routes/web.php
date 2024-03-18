@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+<<<<<<< HEAD
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+=======
+>>>>>>> 7cc5bf7 (done change laravel logo)
 Route::get('/', function () {
     return view('welcome');
 });
